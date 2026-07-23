@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model _5Pages.Models.ContactModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Contact Us</h1>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:green">@ViewBag.Message</p>
+}
+<form asp-action="ContactUS" method="post">
+
+    <input asp-for="Name" placeholder="Full Name" />
+
+    <input asp-for="Email" placeholder="Email Address" />
+
+    <input asp-for="Subject" placeholder="Subject" />
+
+    <textarea asp-for="Message" rows="5" placeholder="Message"></textarea>
+
+    <button type="submit" class="btn">
+        Send Message
+    </button>
+
+</form>
+
+<hr />
+
+<h3>Office</h3>
+
+<p>TechNova Solutions</p>
+
+<p>Pune, Maharashtra</p>
+
+<p>Email : info@technova.com</p>
+
+<p>Phone : +91 9876543210</p>

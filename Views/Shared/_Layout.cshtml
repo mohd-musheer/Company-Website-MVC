@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>TechNova Solutions</title>
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                    TechNova
+                </div>
+
+                <ul>
+
+                    <li>
+                        <a asp-controller="USER" asp-action="Home">Home</a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="USER" asp-action="AboutUS">About</a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="USER" asp-action="Services">Services</a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="USER" asp-action="Carear">Career</a>
+                    </li>
+
+                    <li>
+                        <a asp-controller="USER" asp-action="ContactUS">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        @RenderBody()
+
+    </main>
+
+    <footer>
+
+        <div class="container">
+
+            <p><strong>TechNova Solutions</strong></p>
+
+            <p>
+                Software Development | Cloud | AI Solutions
+            </p>
+
+            <p>
+                Email : info@technova.com
+            </p>
+
+            <p>
+                © 2026 TechNova Solutions. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
