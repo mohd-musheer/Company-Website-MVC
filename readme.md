@@ -72,6 +72,69 @@ or
 http://localhost:5000
 ```
 
+
+## Pull Image
+
+```bash
+docker pull mohdmusheer/5pages:latest
+```
+
+## Run Container
+
+```bash
+docker run -d \
+  --name 5pages \
+  -p 8080:8080 \
+  mohdmusheer/5pages:latest
+```
+
+## Access Application
+
+Open:
+
+```
+http://localhost:8080
+```
+
+or
+
+```
+http://<YOUR_SERVER_IP>:8080
+```
+
+## Exposed Port
+
+```
+8080
+```
+
+## Docker Commands
+
+### View Running Containers
+
+```bash
+docker ps
+```
+
+### Stop Container
+
+```bash
+docker stop 5pages
+```
+
+### Start Container
+
+```bash
+docker start 5pages
+```
+
+### Remove Container
+
+```bash
+docker rm -f 5pages
+```
+
+
 ## Deployment
 
 The project can be deployed on:
